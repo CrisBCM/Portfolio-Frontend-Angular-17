@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+//global padding styles
+.lateral-padding {
+  padding-inline: clamp(40px, 2.67857vw + 12.5714px, 64px);
+
+  @media (max-width: 1024px) {
+    padding-inline: clamp(16px, 3.61446vw + 2.98795px, 40px);
+  }
+}
+
+//globlal font styles
+
+:root{
+    --header-font: "Oswald", sans-serif;
+}
