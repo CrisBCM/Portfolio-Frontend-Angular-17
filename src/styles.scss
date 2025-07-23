@@ -10,6 +10,11 @@ ul{
   padding: 0;
   margin: 0;
 }
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 //global padding styles
 .lateral-padding {
   padding-inline: clamp(40px, 2.67857vw + 12.5714px, 64px);
@@ -31,4 +36,8 @@ ul{
     --primary-gray:#58534E;
     --secondary-gray:#B9B8B6;
     --primary-white:#DAD9D8;
+
+    //FONT SIZES
+    --font-size-subtitle: 1.5rem;
+    --font-size-title: 2rem;
 }

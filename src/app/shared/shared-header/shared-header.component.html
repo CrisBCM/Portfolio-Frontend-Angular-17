@@ -1,14 +1,28 @@
 <header class="header lateral-padding">
     <section class="header__logo">
-        <h2 class="header__logo-title">CRISTIAN CRUZ</h2>
+        <h2 class="header__logo-subtitle">CRISTIAN CRUZ</h2>
     </section>
     <nav class="header__nav">
         <ul class="header__nav-list">
-            <li class="header__nav-item">
-                <button class="header__nav-button header__nav-button--language">
+            <li class="header__nav-item header__nav-item--relative">
+                <button class="header__nav-button header__nav-button--language" (click)="switchLanguageDropDown()">
                     <h3 class="header__nav-text">EN</h3>
                     <img class="header__nav-img header__nav-img--carret-down" src="../../../assets/shared-icons/carret-down-icon.svg" alt="language button">
                 </button>
+                @if(isLanguageDropDownOpen){
+                    <ul class="header__drop-down">
+                    <li class="header__drop-down-item">
+                        <button class="header__drop-down-button">
+                            ES
+                        </button>
+                    </li>
+                    <li class="header__drop-down-item">
+                        <button class="header__drop-down-button">
+                            EN
+                        </button>
+                    </li>
+                </ul>
+                }
             </li>
             <li class="header__nav-item">
                 <button class="header__nav-button">

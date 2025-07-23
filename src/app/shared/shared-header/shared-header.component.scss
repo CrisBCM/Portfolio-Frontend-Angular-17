@@ -4,7 +4,8 @@
     font-family: var(--header-font);
     padding-top: 48px;
     &__logo{
-        &-title{
+        &-subtitle{
+            font-size: var(--font-size-subtitle);
             color: var(--primary-white);
             margin: 0;
         }
@@ -12,23 +13,21 @@
     &__nav{
         &-list{
             display: flex;
-            gap:10px;
+            gap:6px;
             align-items: center;
         }
         &-item{
-
+            &--drop{
+                position: relative;
+            }
         }
         &-button{
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
             &--language{
                 display: flex;
                 align-items: center;
                 gap: 4px;
-                color: var(--primary-white);
-                font-size: 1.3em;
-                font-weight: bold;
+                padding: 6px 10px;
+                background-color: #161616;
             }
         }
         &-img{
@@ -38,6 +37,33 @@
         }
         &-text{
             margin: 0;
+            color: var(--primary-white);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+    &__drop-down{
+        background-color: #161616;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        // gap: 8px;
+        font-size: 1.2rem;
+        color: var(--primary-white);
+        font-weight: bold;
+        &-item{
+        }
+        &-button{
+            padding: 0;
+            padding: 13px 24px;
+            color: var(--primary-white);
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+            &:hover{
+                transition: all .3s;
+                background-color: #272158d3;
+            }
         }
     }
 }

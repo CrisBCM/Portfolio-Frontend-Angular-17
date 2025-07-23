@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './shared-header.component.scss'
 })
 export class SharedHeaderComponent {
+  isLanguageDropDownOpen:boolean = false;
 
+  switchLanguageDropDown(){
+    this.isLanguageDropDownOpen = this.isLanguageDropDownOpen ? false : true;
+  }
 }
