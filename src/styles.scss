@@ -1,3 +1,15 @@
+//general global styles
+
+body{
+  background-color: var(--primary-black);
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 //global padding styles
 .lateral-padding {
   padding-inline: clamp(40px, 2.67857vw + 12.5714px, 64px);
@@ -10,5 +22,13 @@
 //globlal font styles
 
 :root{
+
+    //FONTS
     --header-font: "Oswald", sans-serif;
+
+    //COLORS
+    --primary-black: #282623;
+    --primary-gray:#58534E;
+    --secondary-gray:#B9B8B6;
+    --primary-white:#DAD9D8;
 }
