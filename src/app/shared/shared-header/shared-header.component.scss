@@ -1,6 +1,8 @@
 .header{
+    display: flex;
+    justify-content: space-between;
     &__logo{
-
+        
     }
     &__nav{
         &-list{
@@ -10,7 +12,7 @@
 
         }
         &-button{
-            
+
         }
     }
 }
