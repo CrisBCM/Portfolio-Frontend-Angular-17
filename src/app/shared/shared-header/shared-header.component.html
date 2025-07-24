@@ -6,18 +6,20 @@
         <ul class="header__nav-list">
             <li class="header__nav-item header__nav-item--relative">
                 <button class="header__nav-button header__nav-button--language" (click)="switchLanguageDropDown()">
-                    <h3 class="header__nav-text">EN</h3>
+                    <h3 class="header__nav-text">
+                        {{'current.language' | translate}}
+                    </h3>
                     <img class="header__nav-img header__nav-img--carret-down" src="../../../assets/shared-icons/carret-down-icon.svg" alt="language button">
                 </button>
                 @if(isLanguageDropDownOpen){
                     <ul class="header__drop-down">
                     <li class="header__drop-down-item">
-                        <button class="header__drop-down-button">
+                        <button class="header__drop-down-button" (click)="useLanguage('es')">
                             ES
                         </button>
                     </li>
                     <li class="header__drop-down-item">
-                        <button class="header__drop-down-button">
+                        <button class="header__drop-down-button" (click)="useLanguage('en')">
                             EN
                         </button>
                     </li>
